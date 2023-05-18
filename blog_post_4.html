@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<script type="text/javascript" async="" 
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-
+MML-AM_CHTML">
+</script>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Jonas Richter</title>
+  <meta content="Homepage of Jonas Richter. Marie Curie Postdoctoral 
+Fellow. Quantum many-body physics, condensed matter theory, and quantum 
+information." name="description">
+  <meta content="Jonas Richter, Richter, Jonas, Physik, 
+Theoretical Physics,
+Physics, Stanford, Stanford University, MSCA, LUH, Leipniz 
+Universität Hannover, Hannover, University College London, London, UCL, 
+University of Osnabrück, 
+Universität 
+Osnabrück, Osnabrück, Braunschweig, TU Braunschweig, condensed matter theory" 
+name="keywords">
+<meta name="google-site-verification" 
+content="JtuLUUT7YrUuibYVgF51NXjV7yZfVscy3EeTbPbqxSA" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon2.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link 
+href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,
+600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,
+300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" 
+rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/academicons/css/academicons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.0.1
+  * Template URL: 
+https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+      <br>
+      <!--  <img src="assets/img/Cornwall_1.JPG" alt="" class="img-fluid 
+rounded"> -->
+        <h1 class="text-light"><a href="index.html">Jonas Richter</a></h1>
+        
+    
+        <div class="social-links mt-3 text-center">
+             <a 
+href="mailto:jonasr1@stanford.edu" 
+class="linkedin"><i class="bx 
+bx-envelope"></i></a> 
+         <a href="https://scholar.google.de/citations?user=O7hvSkQAAAAJ&hl=de" 
+class="linkedin"><i class="ai 
+ai-google-scholar"></i></a> 
+   <a href="https://twitter.com/richter_jonas_2" 
+class="linkedin"><i class="bx bxl-twitter"></i></a> 
+ </div>
+ <div class="social-links mt-3 text-center">
+          <a href="https://arxiv.org/a/richter_j_2.html" class="linkedin"><i 
+class="ai 
+ai-arxiv"></i></a> 
+ <a href="https://orcid.org/0000-0003-2184-5275" class="linkedin"><i class="ai 
+ai-orcid"></i></a> 
+  <a href="blog.html" class="linkedin"><i 
+class="bx 
+bx-book-reader"></i></a> 
+        </div>
+      </div>
+      </div>
+  </header><!-- End Header -->
+
+    
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2> Jonas Richter's blog - about quantum physics and postdoc life 
+</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li> Hydrodynamics in long-range systems with kinetic constraints 
+</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+      <section id="about" class="resume section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> Hydrodynamics in long-range systems with kinetic constraints 
+</h2>
+          <h6> 18. May 2023 </h6>
+          <br>
+           
+          <h5>
+         In the last few months, together with my collaborators Alan 
+Morningstar and Nick O'Dea, we worked on a project studying the competition 
+of long-range interactions and center-of-mass conservation, and their 
+impact on transport properties of many-body systems. We published a paper that 
+can be found on the <a href="https://arxiv.org/abs/2304.12354">arXiv</a>. In 
+this blog post, I want to tell you about some of our findings in a, hopefully, 
+relatively easy to understand way. 
+          </h5>
+<br>
+<h5>
+Broadly speaking, hydrodynamics describes the long-time evolution of conserved 
+quantities from local to global equilibrium. More specifically, 
+consider for instance a system with a conserved number of particles, e.g., 
+particles hopping 
+on a chain composed of discrete lattice sites, where the initial particle 
+distribution is slightly inhomogeneous. Clearly, this is a nonequilibrium 
+situation since in equilibrium the particle number would be the same on every 
+site. If the particles now hop randomly to nearest-neighboring lattice sites, 
+driven by the finite gradient of the particle density, then this 
+random-walk-like dynamics would on average be described by diffusive 
+hydrodynamics.  
+</h5>
+<br>
+<h5>
+Understanding the 
+emergence of such hydrodynamics in many-body quantum systems is a 
+highly challenging and actively pursued research question. Likewise, 
+it is an intriguing question what classes of hydrodynamics, e.g., some 
+anomalous types of transport other than just standard diffusion, can arise in 
+certain systems.     
+In this context, our study was motivated by two different 
+directions:
+</h5>
+<br>
+<h5>
+On one hand, it has been shown in recent works that models with 
+kinetic constraints can feature slow subdiffusive transport. One 
+popular example are systems with higher-order conservation laws, e.g., in 
+addition to the number of particles, the center-of-mass of the particles is 
+conserved as well. The slower transport can be understood from the fact that 
+the additional condition of conserving the center-of-mass restricts the 
+mobility of the particles. 
+Importantly, such kinds of systems are not just of theoretical interest, but 
+can actually be realized in experiments. For instance, in cold-atom platforms, 
+the center-of-mass conservation can effectively be induced by tilting the 
+optical lattice. 
+</h5>
+<br>
+<h5>
+On the other hand, in contrast to constraint systems, faster than diffusive 
+transport can be achieved in systems with long-range interactions. Consider for 
+instance a situation where particles can hop to far-away sites, but the 
+probability for such a long-range hop decreases (as a power law) with 
+increasing distance, e.g., \( \propto |i-j|^{-\nu} \). Depending on the value 
+of \(\nu \), transport in these systems can be diffusive (as in strictly 
+short-range models), but also superdiffusive or faster (see also one of my 
+previous <a 
+href="https://doi.org/10.1103/PhysRevResearch.5.L012031">publications</a> for 
+more details and many references). Importantly, long-range interactions are 
+ubiquitous in nature and should be familiar to you also from other contexts 
+(e.g., Coulomb interaction). Therefore, similar to the 
+center-of-mass-conserving systems introduced above, it is not surprising that 
+understanding the 
+physics of systems with long-range interactions is immediately relevant to 
+experiments, e.g., in trapped-ion platforms or in experiments with polar 
+molecules. 
+</h5>
+<br>
+<h5>
+A natural question is now what classes of hydrodynamics can emerge in models, 
+where long-range interactions which 
+facilitate faster transport, compete with center-of-mass conservation which 
+constrains transport. A convenient starting point to study this question is 
+provided by pair-hopping models described by the Hamiltonian, 
+</h5>
+<h5><span class="math display">\[H = \sum_x \sum_{s,r} J_{sr} \left(S_{x}^+ 
+S_{x+r}^- S_{x+r+s}^- S_{x + s + 2r}^+ + \text{h.c.}\right)\]</span></h5>
+<h5>
+where the \(S_x^\pm \) are quantum spin operators at lattice site \(x \). More 
+specifically, these ladder operators lead to an increase (decrease) of the \(z 
+\) component of the spin. Inspecting the terms in \(H \), one finds that 
+spin-flips can only occur in pairs. That is, a spin excitation can only travel 
+from \(x+r \) to \(x \) if simultaneously an excitation travels from \(x+r+s 
+\) to \(x + s + 2r \). The opposite process can occur as well (denoted by \( 
+\mathrm{h.c.}\)). Note that in this way, the 
+Hamiltonian conserves both the total magnetization \(\sum_x S_x^z\) as well as 
+the associated dipole moment \(\sum_x x S_x^z\).  
+</h5>
+<br>
+<h5> 
+In the previous paragraph,  I have switched language from "particles" to 
+"spins", and from "center-of-mass" to "dipole moment". This is quite a popular 
+mapping which is often used by condensed-matter physicists. Simply pick the 
+picture you are most comfortable working with! Going back to particles (for 
+the moment), the pair-hopping processes described by \(H \) can be illustrated 
+as shown in the following image: 
+</h5>
+
+     <div class="container">
+
+     <div class="section-title">
+                <div class="row">
+                  <div class="block-lg-6" data-aos="fade-right">
+            <img src="assets/img/research/LongRangeCOM_1.png" class="img-fluid 
+max-width: 
+60%" 
+alt="" > </div>
+
+               </div>
+       </div>
+       </div>
+<h5>
+Apparently, there are two relevant length scales. A "hopping" distance \(r \) 
+and a "pairing" distance \(s \). The strengths of the terms in \(H \) with 
+different \(s \) and \(r \) will be encoded by the coupling coefficient 
+\(J_{sr} \). As discussed further below, we will particularly consider cases 
+where \(J_{sr} \) decays with increasing \(s \) and \(r \). 
+</h5>
+<br>
+<h5>
+Studying quantum dynamics is unfortunately extremely challenging. While 
+analytical approaches are comparatively rare, numerical methods are limited to 
+rather small system sizes due to the exponentially increasing complexity of 
+quantum systems. Therefore, we here proceed differently and consider a 
+classical system of particles (or rather some coarse-grained cells), whose 
+dynamics is generated by a master 
+equation that incorporates the pair-hopping processes shown in the above 
+picture. 
+</h5>
+<h5><span class="math display">\[
+\begin{align}
+\dot{n}_x = \sum_{r,s} C_{sr} [ 
+    &-(n_{x-2r-s} - n_{x-r-s} - n_{x-r} + n_{x})  \\[-1em]
+    &+(n_{x-r-s} - n_{x-s} - n_{x} + n_{x+r})  \\
+    &+(n_{x-r} - n_{x} - n_{x+s} + n_{x+s+r})  \\
+    &-(n_{x} - n_{x+r} - n_{x+s+r} + n_{x+s+2r})
+    ]
+\end{align}
+\]</span></h5>
+<h5> 
+Here, \(n_x \) is the particle density at site \(x \), and the four lines of 
+the 
+master equation correspond to the four different ways this density can change 
+due to pair-hopping processes involving the distances \(s \) and \(r \). The 
+amplitude of these processes is set by the coefficients \(C_{sr} \) for which 
+we here choose the form 
+</h5>
+<h5><span class="math display">\[C_{sr} = \frac{1}{(s+1)^\alpha 
+r^\beta}\]</span></h5>
+<h5> 
+Thus, \(s \) and \(r \) are individually controlled by the two exponents 
+\( \alpha \) and \( \beta \). Long-range interactions correspond to 
+small values of \( \alpha, \beta \). Generally, the idea of this approach is 
+that the hydrodynamics described by the classical master equation correctly 
+captures the emerging hydrodynamics in microscopic quantum systems. 
+While this 
+is not obvious, the believe is that chaotic 
+highly excited quantum systems at long times behave essentially classically 
+and that the resulting hydrodynamics should be universal (and we indeed 
+provide evidence for this in our paper, but I won't discuss this any 
+further here). Note that, following a 
+Fermi's Golden rule argument, a meaningful comparison of the master equation and 
+the quantum Hamiltonian \(H \) requires to choose the coupling 
+coefficients as \(J_{sr} \sim \sqrt{C_{sr}} \).
+</h5>
+<br> 
+<h5> 
+It is now instructive to consider two distinct limiting cases: (i) \(\beta \to 
+\infty \), which corresponds to \(r \to 1 \). The hopping distance is thus
+short range while the pairing distance \(s \) can be long-ranged.  (ii) 
+\(\alpha \to 
+\infty \), which corresponds to \(s \to 0 \). In this case, \(r \) can be 
+long-ranged while \(s \) is small. We can analyze the master equation 
+analytically as well as numerically, focusing on the regime of long times and 
+long wavelengths where hydrodynamics is expected to emerge. Sparing you the 
+details, the phase diagram that we obtain for the cases (i) and (ii) is 
+summarized below. 
+</h5>
+
+ <div class="container">
+
+     <div class="section-title">
+                <div class="row">
+                  <div class="block-lg-6" data-aos="fade-right">
+            <img src="assets/img/research/LongRangeCOM_2.png" class="img-fluid 
+max-width: 
+45%" 
+alt=""> </div>
+               </div>
+       </div>
+</div>
+<h5>
+As can be seen, the effects of \(s \) and \(r \) (or \( \alpha \) and \( \beta 
+\) ) are somewhat different. Specifically, in the case of a short-range hopping 
+distance, the fastest achievable transport is diffusive. This results from a 
+local breakdown of the center-of-mass conservation. In contrast, if the pairing 
+distance remains short-ranged but hops can be long-ranged, transport can become 
+arbitrarily fast with the dynamical exponent \(z \to 0 \). Eventually, if \( 
+\beta \) becomes too small, locality breaks down and the model essentially 
+behaves as if it would have all-to-all connectivity. In this limit, 
+hydrodynamics breaks down as well since any kind of inhomogeneity would relax 
+basically 
+instantaneously. 
+</h5>
+<br>
+<h5>
+While understanding the above "toy model" is already quite interesting, the 
+question is of course if such physics is also relevant to actual 
+realistic systems. As already mentioned above, a good candidate in this context 
+are quantum systems in a linear potential. Specifically, consider the so-called 
+long-range XY model, 
+</h5> 
+<h5><span class="math display">\[H_\text{XY} = \sum_{i \lt j} 
+\frac{J}{|i-j|^\nu} (\sigma^+_i \sigma^-_j + 
+\sigma^-_i \sigma^+_j) + F \sum_i i n_i\]</span></h5>
+
+<h5> 
+The \( \sigma^\pm_i \) denote Pauli matrices which describe spin-\(1/2 \) 
+degrees of 
+freedom. \(J \) sets the energy scale of the interactions whose decay is 
+controlled by the exponent \( \nu \). Moreover, the strength of the tilt is 
+given by \(F \). Note that the term \( \sum_i i n_i 
+\), where \(n_i = (\sigma_i^z + 1)/2 \), precisely corresponds to the "center 
+of 
+mass" of the spins. 
+In the case where \( F \gg J\), the tilt is the dominant term and the 
+center-of-mass (dipole moment) is effectively conserved, at least on 
+exponentially long time scales. In order to understand the dynamics of 
+\(H_\text{XY} \) at strong tilts, one can perform a 
+Schrieffer-Wolff transformation to obtain an effective model which describes 
+the relevant processes in this regime. While you can check out our paper for 
+the details, I here want to take an easier route and simply consider some 
+example hopping-processes that conserve the center-of-mass and the energy of 
+the system:     
+</h5>
+       
+            <div class="container">
+
+     <div class="section-title">
+                <div class="row">
+                  <div class="block-lg-6" data-aos="fade-right">
+            <img src="assets/img/research/Virtual_Hops.png" class="img-fluid 
+max-width: 
+45%" 
+alt=""> </div>
+
+               </div>
+       </div>
+       </div>
+       
+<h5>
+The effective amplitude \(J_\text{eff} \) of these third-order processes can be 
+obtained as usual in perturbation theory by multiplying the interaction 
+strength \( \propto 
+|i-j|^{-\nu} \) by the energy denominator \(1/E \). In this way, one can also 
+show that lower-order processes don't contribute as their amplitudes cancel 
+out. As becomes apparent from the above image, the combination of long-range 
+interactions and strong lattice tilt in the XY model indeed leads to 
+pair-hopping processes with distances \(s \) and \(r \). However, the power-law 
+dependence of these effective hoppings differs from the 
+simpler form of the \(C_{sr} \) that we studied above: 
+</h5>
+<h5><span class="math display">\[J_\text{eff} \propto \frac{J^3}{F^2} 
+\frac{1}{r^{\nu+1}(r+s)^{\nu+1}} \left( \frac{1}{s^\nu} - 
+\frac{1}{(2r+s)^\nu}\right) \]</span></h5>
+<h5> 
+
+</h5>
+<br>
+<h5> 
+It now turns out that, using this expression of \( J_\text{eff} \) as a 
+starting point for a corresponding classical master equation, we numerically 
+find that subdiffusion with dynamical exponent \(z = 4 \) appears extremely 
+stable and persists down to very small values of \( \nu \). This can be 
+understood from the fact that these are third-order processes, such that 
+reducing \( 
+\nu \) has a weaker effect. It thus seems challenging to realize 
+in experiments with tilted systems all the different phases with 
+continuously varying \(z \) shown in the above 
+phase diagram. Finding ways to realize these phases is an interesting direction 
+of prospective research.
+</h5>
+<br>
+<h5>
+Overall, this was an extremely fun project that started from some informal 
+discussions and seminar talks. I hope I can continue to work on 
+similar questions in the future. 
+</h5>
+
+        
+        </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

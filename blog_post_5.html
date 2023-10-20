@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<script type="text/javascript" async="" 
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-
+MML-AM_CHTML">
+</script>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Jonas Richter</title>
+  <meta content="Homepage of Jonas Richter. Marie Curie Postdoctoral 
+Fellow. Quantum many-body physics, condensed matter theory, and quantum 
+information." name="description">
+  <meta content="Jonas Richter, Richter, Jonas, Physik, 
+Theoretical Physics,
+Physics, Stanford, Stanford University, MSCA, LUH, Leipniz 
+Universität Hannover, Hannover, University College London, London, UCL, 
+University of Osnabrück, 
+Universität 
+Osnabrück, Osnabrück, Braunschweig, TU Braunschweig, condensed matter theory" 
+name="keywords">
+<meta name="google-site-verification" 
+content="JtuLUUT7YrUuibYVgF51NXjV7yZfVscy3EeTbPbqxSA" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon2.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link 
+href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,
+600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,
+300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" 
+rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/academicons/css/academicons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.0.1
+  * Template URL: 
+https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+      <br>
+      <!--  <img src="assets/img/Cornwall_1.JPG" alt="" class="img-fluid 
+rounded"> -->
+        <h1 class="text-light"><a href="index.html">Jonas Richter</a></h1>
+        
+    
+        <div class="social-links mt-3 text-center">
+             <a 
+href="mailto:jonasr1@stanford.edu" 
+class="linkedin"><i class="bx 
+bx-envelope"></i></a> 
+         <a href="https://scholar.google.de/citations?user=O7hvSkQAAAAJ&hl=de" 
+class="linkedin"><i class="ai 
+ai-google-scholar"></i></a> 
+   <a href="https://twitter.com/richter_jonas_2" 
+class="linkedin"><i class="bx bxl-twitter"></i></a> 
+ </div>
+ <div class="social-links mt-3 text-center">
+          <a href="https://arxiv.org/a/richter_j_2.html" class="linkedin"><i 
+class="ai 
+ai-arxiv"></i></a> 
+ <a href="https://orcid.org/0000-0003-2184-5275" class="linkedin"><i class="ai 
+ai-orcid"></i></a> 
+  <a href="blog.html" class="linkedin"><i 
+class="bx 
+bx-book-reader"></i></a> 
+        </div>
+      </div>
+      </div>
+  </header><!-- End Header -->
+
+    
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2> Jonas Richter's blog - about quantum physics and postdoc life 
+</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li> Simulating quantum transport in closed and open quantum 
+systems 
+</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+      <section id="about" class="resume section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2> Simulating quantum transport in closed and open quantum 
+systems  
+</h2>
+          <h6> 20. October 2023 </h6>
+          <br>
+           
+          <h5>
+        In a previous post, I already discussed my interest 
+in transport phenomena occurring in many-body quantum systems. In a nutshell, 
+the question is how an inhomogeneous distribution of some globally conserved 
+quantity relaxes to thermal equilibrium over the course of the system's time 
+evolution. 
+While one naively expects the emergence of diffusion (and sure 
+enough, diffusion indeed arises in the majority of systems), there also 
+exist systems which feature anomalous types of hydrodynamics. Generally, 
+given the complexity of many-body quantum systems, it is quite challenging to 
+simulate their transport characteristics and to extract 
+precise (quantitative) values for their transport coefficients (e.g. the 
+diffusion constant).
+          </h5>
+<br>
+<h5>
+From a practical (or say numerical) point of view, there are essentially two 
+main approaches to explicitly simulate the transport properties of a given
+many-body quantum systems. The first approach relies on the theory of linear 
+response, where one considers the relaxation of small fluctuations of the 
+system around its equilibrium state. These fluctuations are captured by 
+time-dependent correlation functions evaluated within an equilibrium ensemble, 
+e.g.,   
+</h5>
+<h5><span class="math display">\[ C(r,t) = 
+\frac{\text{tr}[e^{-\beta H}\mathcal{O}_0 
+\mathcal{O}_r(t)]}{\text{tr}[e^{-\beta H}]}\ .  \]</span></h5>
+<h5>
+<h5>
+Here, \(\beta = 1/T \) is the inverse temperature, \(H \) is the Hamiltonian of 
+the system, and \(\mathcal{O}_0 \) and \(\mathcal{O}_r \) are local 
+operators separated by a distance \(r \). Moreover, the 
+time argument indicates the time-evolved operator at time \(t \). To 
+be specific, let's consider a system with conserved total magnetization 
+\(\sum_\ell S_\ell^z \), and let \(\mathcal{O}_\ell \) be local spin operators 
+\(S_\ell^z \). Then, in principle, one can infer the transport properties of 
+\(H \) from the 
+space- and time-dependence of \(C(r,t) \). In practice, however, it is only 
+possible to simulate \(C(r,t) \) for systems of finite size (often quite small) 
+and only for a finite time \(t \). Thus a finite-size scaling 
+analysis is required in order to estimate the asymptotic transport 
+characteristics 
+for systems in 
+the thermodynamic limit.
+</h5>
+<br>
+<h5>
+In the second approach, the system of interest is coupled at its boundaries to 
+reservoirs (we here restrict ourselves to one-dimensional systems for 
+simplicity). 
+These reservoirs might for instance lead to different temperatures or chemical 
+potentials at the system's ends, thereby 
+inducing a nonequilibrium situation and driving a current through the system. 
+In the long-time limit, a nonequilibrium steady-state will emerge. In 
+particular, the transport characteristics can then be obtained by studying the 
+distribution of the conserved quantity as well as by studying how the current 
+changes upon varying the length \(L \) of the system. For example, in a 
+perfect conductor (which exhibits ballistic transport), the current will be 
+independent of \(L \). On the other hand, in the case of diffusion, the current 
+scales as \(j \propto L^{-1} \). We refer to this 
+approach of simulating transport properties as the <i>open-system</i> approach.
+</h5>
+<br>
+<h5>
+Naturally, one expects that both these approaches (closed vs open) should 
+yield the same results (e.g., the same value of the diffusion constant). 
+However, when studying systems of 
+finite size numerically, one often observes notable deviations. One reason for 
+these deviations (in addition to the finite system size) might be that the 
+open-system approach depends on multiple 
+parameters, e.g., how strongly the system is coupled 
+to the reservoirs, as well as the amplitude of the driving due to the baths 
+(e.g., 
+the temperature difference between the left and the right baths). How can we 
+know then which results we should trust? And how can we be sure that both 
+approaches asymptotically yield the same answer in the thermodynamic limit?
+</h5>
+<br>
+<h5>
+In a series of two papers (see <a 
+href="https://arxiv.org/abs/2210.10528">here</a> and <a 
+href="https://arxiv.org/abs/2303.00430">here</a> for details), we tried to 
+address 
+this conceptual gap and to explicitly connect the results of both approaches 
+with each other. As is standard in the literature, the open-system 
+setup (i.e., the coupling to the bath) is modeled by a Lindblad quantum master 
+equation, involving suitably chosen jump operators that induce/remove 
+magnetization, 
+</h5>
+<h5><span class="math display">\[ 
+\mathcal{D} \rho(t) = \sum_j \alpha_j \left(L_j \rho(t) L_j^\dagger - 
+\frac{1}{2}\lbrace \rho(t),L_j^\dagger L_j\rbrace \right)\ ,  \]</span></h5>
+<h5>
+where \(\rho(t) \) is the density matrix of the system.
+In the simplest setting, we can consider a 
+scenario with only a single bath in the middle of the system (see below), 
+e.g., 
+</h5>
+<h5><span class="math display">\[ 
+L_1 = S_{L/2}^+\ ,\quad \alpha_1 = \gamma(1+\mu)\ , \\  L_2 = S_{L/2}^-\ ,\quad 
+\alpha_2 = \gamma(1-\mu)\ , \]</span></h5>
+<h5>
+where for \(\mu > 0 \) excess magnetization is induced, which is then 
+transported through the system. 
+</h5>
+
+ <div class="container">
+
+     <div class="section-title">
+                <div class="row">
+                  <div class="block-lg-6" data-aos="fade-right">
+            <img src="assets/img/research/OpenSystem.jpg" class="img-fluid 
+max-width: 
+60%" 
+alt="" > </div>
+
+               </div>
+       </div>
+       </div>
+
+<h5>
+
+In order to make a connection between the Lindblad framework and the 
+equilibrium correlation function written above, we choose to unravel the 
+Lindblad equation in terms of stochastic quantum trajectories. These 
+trajectories require the time evolution of pure states (as opposed to the mixed 
+state \(\rho(t) \) in the Lindblad equation) with respect to an effective 
+non-Hermitian Hamiltonian, as well as the application of jump operators to 
+these states at randomly chosen times. Averaging over sufficiently many such 
+trajectories then recovers the dynamics of the open system. Moreover, at time 
+\(t = 0 \), the ensemble of pure states has to be chosen is a way that 
+correctly represents the initial density matrix \(\rho(0) \). In our case, we 
+consider a 
+system that is initially in equilibrium at formally infinite temperature, which 
+corresponds to choosing completely random pure states for the stochastic 
+unraveling.  
+</h5>
+<br>      
+<h5>
+The randomness of the pure initial states in the stochastic unraveling enters 
+as a key ingredient for our derivation. We can use this 
+randomness, in combination with the concept of quantum typicality (see, e.g., 
+<a href="https://arxiv.org/abs/2001.05289">here</a> for an introduction to 
+typicality), in order to connect the pure-state trajectories to equilibrium 
+correlation functions. In particular, we show that in the limit of weak 
+system-bath coupling and weak driving, the dynamics of the open system can be 
+written as a superposition of closed-system linear-response correlation 
+functions. 
+</h5>
+<br>
+<h5>
+This novel connection between open-system and closed-system dynamics has 
+conceptual as well as practical consequences. On one hand, it provides a nice 
+theoretical foundation that both numerical approaches (linear response vs 
+Lindblad) will yield the same transport behavior, at least when the 
+involved parameters are chosen appropriately. On the other hand, it is 
+important to note that the evaluation of linear-response correlation functions 
+is numerically much less costly than a full stochastic unraveling. Therefore, 
+when interested in the dynamics of weakly coupled/driven open quantum 
+systems, the superposition of closed-system correlation functions that we 
+derived in the paper provides a more efficient simulation method.    
+</h5>
+<br>
+<h5>
+If you are interested in more details, feel free to check 
+out our publications or shoot me an email.
+</h5>
+ <div class="container">
+
+     <div class="section-title">
+                <div class="row">
+                  <div class="block-lg-6" data-aos="fade-right">
+            <img src="assets/img/research/OpenSystem_Trans.jpg" 
+class="img-fluid 
+max-width: 
+60%" 
+alt="" > </div>
+
+               </div>
+       </div>
+       </div>
+
+
+        
+        </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
